@@ -1,0 +1,32 @@
+.material-input{
+    width: calc( 100% / 3 - 20px);
+    padding: 10px;
+    display: flex;
+}
+
+.input-mat input{
+    border: 0;
+    padding: 10px 10px;
+    font-size:14px;
+    margin-right:5px;
+    border-bottom: 1px solid #3C4864 !important;
+}
+
+.input-mat input:last-child{
+    margin-right:0;
+}
+#siteMaterials {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.delete-mat{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: #50E3C2;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+{% extends 'back-office.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/add_general_information.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/add_materials.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <section class="main choose form-quantity">
+
+        <h1>Les matériaux présents</h1>
+        <p>Veuillez ajuster la liste en fonction de votre chantier</p>
+
+        <p class="list">Nom&nbsp;&nbsp;&nbsp;&nbsp;Quantité (en kg)</p>
+
+            {{ form_start(form) }}
+            {{ form_widget(form._token) }}
+            {{ form_errors(form) }}
+            <button type="button" class="btn btn-sm btn-primary btn-add" data-rel="#siteMaterials">Ajouter</button>
+            <div id="siteMaterials" class="row" data-index="{{ form.siteMaterials|length > 0 ? form.siteMaterials|last.vars.name+1 : 0 }}" data-prototype="{{ include("material/material.html.twig", { form: form.siteMaterials.vars.prototype })|e("html_attr") }}">
+                {% for material in form.siteMaterials %}
+                    {{ include("material/material.html.twig", { form: material }) }}
+                {% endfor %}
+            </div>
+            <button type="submit" class="btn btn-success submit-mat" name="button">Étape suivante</button>
+        {{ form_end(form, { "render_rest": false }) }}
+
+    </section>
+
+{% endblock %}

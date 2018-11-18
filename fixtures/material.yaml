@@ -1,0 +1,16 @@
+App\Entity\Material:
+    material_1:
+        name: 'Fer'
+        isRecycled: false
+    material_2:
+        name: 'Bois'
+        isRecycled: true
+    material_3:
+        name: 'Béton'
+        isRecycled: true
+    material_4:
+        name: 'Platre'
+        isRecycled: false
+    material_5:
+        name: 'Verre'
+        isRecycled: true

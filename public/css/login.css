@@ -1,0 +1,61 @@
+/* Connexion */
+
+.center-auth{
+	left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+	width:100%;
+	height:400px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.center-auth .img-auth{
+	width:50%;
+	height:auto;
+}
+
+.center-auth img{
+	display: block;
+	width:50%;
+	height:auto;
+	margin:0 auto;
+}
+
+.center-auth form{
+	width:50%;
+	margin:auto;
+}
+
+input {
+	width:80%;
+	display: block;
+	border:0;
+	border-bottom:1px solid #3C4864;
+	margin-bottom:30px;
+	outline: none;
+	font-size:16px;
+}
+
+button {
+	text-align: center;
+	margin-top:30px;
+	padding:14px 30px;
+	background:#3C4864;
+	border-radius: 25px;
+	color:white;
+	-webkit-box-shadow: 0px 0px 32px -10px rgba(0,0,0,0.36);
+	-moz-box-shadow: 0px 0px 32px -10px rgba(0,0,0,0.36);
+	box-shadow: 0px 0px 32px -10px rgba(0,0,0,0.36);
+	font-size:16px;
+	font-weight: 600;
+	border: 0;
+}
+
+.inscription {
+	text-align: center;
+	margin: auto;
+	margin-top: 100px;
+}

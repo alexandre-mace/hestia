@@ -1,0 +1,46 @@
+App\Entity\SiteManager:
+   site_manager_1:
+       firstname: 'test'
+       lastname: 'test'
+       plainPassword: 'test'
+       email: 'test@test.com'
+       company: 'vinci'
+       director: '@company_chief_1'
+       roles:
+           - 'ROLE_USER'
+   site_manager_2:
+       firstname: 'Clara'
+       lastname: 'Talin'
+       plainPassword: 'test'
+       email: 'clara.talin@gmail.com'
+       company: 'aprr'
+       director: '@company_chief_2'
+       roles:
+           - 'ROLE_USER'
+   site_manager_3:
+       firstname: 'Pierre'
+       lastname: 'Desmesures'
+       plainPassword: 'test'
+       email: 'pierre.desmesures@gmail.com'
+       company: 'bouygues'
+       director: '@company_chief_3'
+       roles:
+           - 'ROLE_USER'
+   site_manager_4:
+       firstname: 'Lola'
+       lastname: 'Guitton'
+       plainPassword: 'test'
+       email: 'lola.guitton@gmail.com'
+       company: 'effage'
+       director: '@company_chief_4'
+       roles:
+           - 'ROLE_USER'
+   site_manager_5:
+       firstname: 'Fred'
+       lastname: 'Galot'
+       plainPassword: 'test'
+       email: 'fred.galot@gmail.com'
+       company: 'colas'
+       director: '@company_chief_5'
+       roles:
+           - 'ROLE_USER'

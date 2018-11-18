@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/back-office.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+
+    {% block header %}
+    <header>
+        <a href="{{ path('homepage') }}" class="retour-a">Accueil</a>
+
+        <a href="{{ path('homepage') }}"><img src="{{ asset('img/logo_noir.png') }}" alt=""></a>
+
+        {% if app.user is not empty %}
+            <a href="{{ path('sitemanager_dashboard') }}" class="edit-profil">Dashboard - {{ app.user.firstname }} <strong>{{ app.user.lastname }}</strong><img src="{{ asset('img/avatars/1') }}.png" alt=""> </a>
+        {% endif %}
+    </header>
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+{% endblock %}

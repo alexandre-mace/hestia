@@ -1,0 +1,71 @@
+input {
+    display: block;
+    outline: none;
+    margin: 0 auto;
+}
+button {
+    text-align: center;
+    margin-top:30px;
+    padding:14px 30px;
+    background:#3C4864;
+    border-radius: 25px;
+    color:white;
+    -webkit-box-shadow: 0px 0px 32px -10px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 0px 32px -10px rgba(0,0,0,0.36);
+    box-shadow: 0px 0px 32px -10px rgba(0,0,0,0.36);
+    font-size:16px;
+    font-weight: 600;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+}
+label {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+header{
+    width:100%;
+    padding:30px 0;
+    border-bottom:1px solid #EDEDED;
+}
+
+header .retour-a{
+    position: absolute;
+    top:40px;
+    left:5%;
+    text-decoration: none;
+    color:black;
+    font-weight:600;
+}
+
+.edit-profil{
+    position: absolute;
+    right:5%;
+    top:5px;
+    text-decoration: none;
+    color:black;
+}
+
+.edit-profil img{
+    display: inline-block;
+    width:50px;
+    border-radius: 50%;
+    height:auto;
+    position:relative;
+    top:18px;
+    margin-left:20px;
+}
+
+
+
+header img{
+    display: block;
+    width:140px;
+    height:auto;
+    margin:0 auto;
+}
+form {
+    margin-top: 200px;
+}

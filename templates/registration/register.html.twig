@@ -1,0 +1,30 @@
+{% extends 'back-office.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/login.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <section class="main">
+
+        <div class="center-auth">
+            <div class="img-auth">
+                <img src="{{ asset('img/connexion.svg') }}" alt="Logo de connexion">
+
+            </div>
+
+            {{ form_start(form) }}
+            {{ form_row(form.firstname) }}
+            {{ form_row(form.lastname) }}
+            {{ form_row(form.company) }}
+            {{ form_row(form.email) }}
+            {{ form_row(form.plainPassword.first) }}
+            {{ form_row(form.plainPassword.second) }}
+
+            <button type="submit">S'inscrire</button>
+            {{ form_end(form) }}
+        </div>
+
+    </section>
+{% endblock %}

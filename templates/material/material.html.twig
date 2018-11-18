@@ -1,0 +1,7 @@
+<div class="material-input" id="material-{{ form.vars.name }}">
+    <div class="input-mat">
+        {{ form_widget(form.material) }}
+        {{ form_widget(form.quantity) }}
+    </div>
+    <span class="delete-mat" data-rel="#material-{{ form.vars.name }}"><span class="close"></span> </span>
+</div>

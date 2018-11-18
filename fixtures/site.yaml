@@ -1,0 +1,113 @@
+App\Entity\Site:
+    site_1:
+        name: 'Chantier 1'
+        type: 'construction'
+        manager: '@site_manager_1'
+        street: '8 rue des écureuils'
+        postalCode: 37300
+        city: 'Joué-Lès-Tours'
+        estimatedFinishDate: <dateTime()>
+        site_materials:
+            - '@site_material_1'
+            - '@site_material_2'
+            - '@site_material_3'
+            - '@site_material_4'
+            - '@site_material_5'
+    site_2:
+        name: 'Chantier 2'
+        type: 'construction'
+        manager: '@site_manager_2'
+        street: '36 rue des moulins'
+        postalCode: 47500
+        city: 'Fumel'
+        site_materials: 
+            - '@site_material_6'
+            - '@site_material_7'
+            - '@site_material_8' 
+    site_3:
+        name: 'Chantier 3'
+        type: 'construction'
+        manager: '@site_manager_3'
+        street: '1 place Pigalle'
+        postalCode: 75018
+        city: 'Paris'
+        site_materials:  
+            - '@site_material_9'
+            - '@site_material_10'
+            - '@site_material_11'
+            - '@site_material_12'
+            - '@site_material_13'  
+    site_4:
+        name: 'Chatnier 4'
+        type: 'construction'
+        manager: '@site_manager_4'
+        street: '5 rue de Marseille'
+        postalCode: 33700
+        city: 'Mérignac'
+        site_materials:  
+            - '@site_material_14'
+            - '@site_material_15'
+            - '@site_material_16'
+    site_5:
+        name: 'Chantier 5'
+        type: 'construction'
+        manager: '@site_manager_5'
+        street: '8 Boulevard de la République'
+        postalCode: 33510
+        city: 'Andernos'
+        site_materials:  
+            - '@site_material_17'
+            - '@site_material_18'
+            - '@site_material_19'
+            - '@site_material_20'
+    site_6:
+        name: 'Chantier 10'
+        type: 'construction'
+        manager: '@site_manager_1'
+        estimatedFinishDate: <dateTime()>
+        street: '8 rue des écureuils'
+        postalCode: 37300
+        city: 'Joué-Lès-Tours'
+        site_materials:
+            - '@site_material_1'
+            - '@site_material_2'
+            - '@site_material_3'
+            - '@site_material_4'
+            - '@site_material_5'
+    site_7:
+        name: 'Chantier 48'
+        type: 'démolition'
+        manager: '@site_manager_1'
+        street: '13 rue Berliose'
+        estimatedFinishDate: <dateTime()>
+        postalCode: 80800
+        city: 'Paris'
+        site_materials:
+            - '@site_material_1'
+            - '@site_material_2'
+            - '@site_material_3'
+            - '@site_material_5'
+    site_8:
+        name: 'Chantier 58'
+        type: 'construction'
+        manager: '@site_manager_1'
+        street: '50 rue des beauprès'
+        postalCode: 10140
+        estimatedFinishDate: <dateTime()>
+        city: 'Agen'
+        site_materials:
+            - '@site_material_3'
+            - '@site_material_4'
+            - '@site_material_5'
+    site_9:
+        name: 'Chantier 108'
+        type: 'démolition'
+        manager: '@site_manager_1'
+        street: '10 rue des gaetans'
+        estimatedFinishDate: <dateTime()>
+        postalCode: 84605
+        city: 'GaetanVille'
+        site_materials:
+            - '@site_material_1'
+            - '@site_material_3'
+            - '@site_material_5'

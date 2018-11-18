@@ -1,0 +1,38 @@
+{% extends 'back-office.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/site/choose_type.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+	<section class="main choose">
+
+		<h1>Quel type de chantier lancez-vous ?</h1>
+
+		<div class="ctn-choose">
+
+			<div class="card site-type" data-rel="démolition">
+				<div class="center">
+					<img src="{{ asset('img/demo.svg') }}" alt="">
+					<p>Démolition</p>
+				</div>
+			</div>
+
+			<div class="card site-type" data-rel="construction">
+				<div class="center">
+					<img src="{{ asset('img/house.svg') }}" alt="">
+					<p>Construction</p>
+				</div>
+			</div>
+		</div>
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+	</section>
+{% endblock %}
+
+{% block javascripts %}
+	{{ parent() }}
+	<script type="text/javascript" src="{{ asset('js/choose_type.js') }}"></script>
+{% endblock %}

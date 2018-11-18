@@ -1,0 +1,43 @@
+{% extends 'back-office.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/login.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <section class="main">
+
+        <div class="center-auth">
+            <div class="img-auth">
+                <img src="{{ asset('img/connexion.svg') }}" alt="Logo de connexion">
+
+            </div>
+
+            <form method="post">
+                {% if error %}
+                    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                {% endif %}
+
+                <label for="inputEmail" class="sr-only">Email</label>
+                <input type="text" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" required autofocus>
+                <label for="inputPassword" class="sr-only">Mot de passe</label>
+                <input type="password" name="password" id="inputPassword" class="form-control" required>
+
+                <input type="hidden" name="_csrf_token"
+                       value="{{ csrf_token('authenticate') }}"
+                >
+                <button type="submit">
+                    Se connecter
+                </button>
+            </form>
+            <div class="inscription">
+                <p>Vous n'avez pas de compte ?</p>
+                <a href="{{ path('register') }}">
+                    S'inscrire
+                </a>
+            </div>
+        </div>
+
+    </section>
+{% endblock %}

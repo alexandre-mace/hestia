@@ -1,0 +1,87 @@
+App\Entity\SiteMaterial:
+    site_material_1:
+        site: '@site_1'
+        quantity: 500
+        material: '@material_1'
+    site_material_2:
+        site: '@site_1'
+        quantity: 120
+        material: '@material_2'
+    site_material_3:
+        site: '@site_1'
+        quantity: 120
+        material: '@material_3'
+    site_material_4:
+        site: '@site_1'
+        quantity: 120
+        material: '@material_4'
+    site_material_5:
+        site: '@site_1'
+        quantity: 120
+        material: '@material_5'
+
+    site_material_6:
+        site: '@site_2'
+        quantity: 150
+        material: '@material_1'
+    site_material_7:
+        site: '@site_2'
+        quantity: 120
+        material: '@material_2'
+    site_material_8:
+        site: '@site_2'
+        quantity: 180
+        material: '@material_3'
+
+    site_material_9:
+        site: '@site_3'
+        quantity: 10
+        material: '@material_1'
+    site_material_10:
+        site: '@site_3'
+        quantity: 20
+        material: '@material_2'
+    site_material_11:
+        site: '@site_3'
+        quantity: 300
+        material: '@material_3'
+    site_material_12:
+        site: '@site_3'
+        quantity: 5
+        material: '@material_4'
+    site_material_13:
+        site: '@site_3'
+        quantity: 120
+        material: '@material_5'
+
+    site_material_14:
+        site: '@site_4'
+        quantity: 150
+        material: '@material_1'
+    site_material_15:
+        site: '@site_4'
+        quantity: 80
+        material: '@material_2'
+    site_material_16:
+        site: '@site_4'
+        quantity: 20
+        material: '@material_3'
+
+    site_material_17:
+        site: '@site_5'
+        quantity: 320
+        material: '@material_2'
+    site_material_18:
+        site: '@site_5'
+        quantity: 25
+        material: '@material_1'
+    site_material_19:
+        site: '@site_5'
+        quantity: 40
+        material: '@material_4'
+    site_material_20:
+        site: '@site_5'
+        quantity: 180
+        material: '@material_5'
+
+

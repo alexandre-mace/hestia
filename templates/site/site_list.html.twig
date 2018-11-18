@@ -1,0 +1,16 @@
+{% extends 'back-office.html.twig' %}
+
+{% block content %}
+	{% for site in sites %}
+		{{ site.name }}
+		{% for siteMaterial in site.siteMaterials %}
+			{{ siteMaterial.material.name }} - {{ siteMaterial.quantity }}
+		{% endfor %}
+		{{ site.recyclingRate }}
+		{% if site.label is defined and site.label is not null %}
+			{{ site.label.grade }}
+		{% endif %}
+		{{ site.manager.username }}
+		<br>
+	{% endfor %}
+{% endblock %}

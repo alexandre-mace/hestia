@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/on-boarding.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slider/slick.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slider/slick-theme.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <section class="onboarding">
+
+        <img src="{{ asset('img/logo_noir.png') }}" alt="Logo de page d'aide expliquant l'application" class="logo_on">
+
+        <div class="slider-board">
+
+            <div class="single-item">
+                <div>
+                    <img src="{{ asset('img/onboarding/1.svg') }}" alt="Logo de page d'aide expliquant l'application">
+                    <p>Intégrer votre entreprise dans une démarche environnemental inédite (economie circulaire).</p>
+                </div>
+
+                <div>
+                    <img src="{{ asset('img/onboarding/2.svg') }}" alt="Logo de page d'aide expliquant l'application">
+                    <p>Renseignez vos chantiers, listez vos materiaux et connaissez votre degré de recyclabilité.</p>
+                </div>
+
+                <div>
+                    <img src="{{ asset('img/onboarding/3.svg') }}" alt="Logo de page d'aide expliquant l'application">
+                    <p>Soyez en relation avec les meilleurs acteurs eco-responsable à proximité de votre chantier.</p>
+                    <a href="{{ path('homepage') }}" class="a-board">Entrer sur Hestia</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+{% endblock %}

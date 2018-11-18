@@ -1,0 +1,72 @@
+{% extends 'back-office.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <section class="main dash">
+
+        <div class="org-ctn">
+            <p>Société : <img src="{{ asset('img/partenaires/vinci') }}.png" alt=""></p>
+        </div>
+
+        <a href="{{ path('site_choose_type') }}" class="add-projet">Ajouter un projet</a>
+
+        <div class="main-all">
+
+            <div class="ctn-left">
+                <div class="hello-ctn">
+                    <h2>Bonjour {{ siteManager.firstname }},</h2>
+
+                    <span>{{ labeledSites|length }}</span><p>de tes projets ont été<br>labélisée !</p>
+                    <img src="{{ asset('img/wins.svg') }}" alt="">
+                </div>
+                <div class="during-ctn">
+                    <p class="title-card">Mon chantier en cours</p>
+                    {% if sites is not empty %}
+                        {% set currentSite = sites|first %}
+                            <div class="center-card">
+                                <h3>{{ currentSite.name }}&nbsp;&nbsp;<span>{{ currentSite.type }}</span></h3>
+                                <p>{{ currentSite.street }}</p>
+                                <p>{{ currentSite.postalCode }}</p>
+                                <p>{{ currentSite.city }}</p>
+                                <p class="taux-during"><span>{{ currentSite.recyclingRate }}</span><br>de produits recyclable</p>
+                            </div>
+                    {% endif %}
+                </div>
+
+                <div class="last-projet">
+                    <h2>Mes derniers projets</h2>
+
+                    <ul>
+                        {% for site in sites %}
+                            <li>{{ site.name }} &nbsp; | &nbsp; <span>{{ site.type|capitalize }}</span> &nbsp; | &nbsp; <span class="span-lite">{{ site.estimatedFinishDate|date('d-m-Y') }}</span> &nbsp; | &nbsp; <span style="font-weight:600;">{{ site.recyclingRate }}%</span> <a href="{{ path('site_show', {'slug': site.slug}) }}">Voir</a> </li>
+                        {% endfor %}
+                    </ul>
+
+                    <a href="{{ path('site_list') }}" class="a-link">Accédez à l'ensemble des projets</a>
+                </div>
+            </div>
+
+            <div class="ctn-right">
+                <p class="title-card">Mes chantiers labélisées</p>
+                {% for labeledSite in labeledSites %}
+                    <div class="card-right">
+                        <h3>{{ labeledSite.name }}&nbsp;&nbsp;<span>{{ labeledSite.type }}</span></h3>
+                        <p>{{ labeledSite.street }}</p>
+                        <p>{{ labeledSite.postalCode }}</p>
+                        <p>{{ labeledSite.city }}</p>
+                        {% if labeledSite.estimatedFinishDate is defined %}
+                            <p>{{ labeledSite.estimatedFinishDate|date('d-m-Y') }}</p>
+                        {% endif %}
+                        <p class="stats-right">{{ labeledSite.recyclingRate  }}%</p>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+
+    </section>
+{% endblock %}

@@ -1,0 +1,41 @@
+header{
+    width:100%;
+    padding:30px 0;
+    border-bottom:1px solid #EDEDED;
+}
+
+header .retour-a{
+    position: absolute;
+    top:40px;
+    left:5%;
+    text-decoration: none;
+    color:black;
+    font-weight:600;
+}
+
+.edit-profil{
+    position: absolute;
+    right:5%;
+    top:5px;
+    text-decoration: none;
+    color:black;
+}
+
+.edit-profil img{
+    display: inline-block;
+    width:50px;
+    border-radius: 50%;
+    height:auto;
+    position:relative;
+    top:18px;
+    margin-left:20px;
+}
+
+
+
+header img{
+    display: block;
+    width:140px;
+    height:auto;
+    margin:0 auto;
+}

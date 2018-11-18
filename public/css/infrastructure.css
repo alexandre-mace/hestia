@@ -1,0 +1,124 @@
+/* Kits */
+
+.choose-type{
+    width:100%;
+    height:auto !important;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top:300px;
+}
+
+.choose-con .ctn-choose{
+    width:100%;
+    height:auto !important;
+    position:relative;
+    top:inherit;
+    left:inherit;
+    transform:inherit;
+}
+
+.choose-con{
+    height:auto !important;
+    width:90%;
+}
+
+.choose-type .side{
+    margin-top:100px;
+    width:30%;
+    height:300px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 32px -10px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 0px 32px -10px rgba(0,0,0,0.36);
+    box-shadow: 0px 0px 32px -10px rgba(0,0,0,0.36);
+    border-radius: 5px;
+}
+
+.choose-type .side:hover{
+    border:1px solid #50E3C2;
+}
+
+.choose-type .side ul{
+    width:85%;
+    margin:0 auto;
+    height:100%;
+    margin-top:60px;
+}
+
+.choose-type .side ul li {
+    margin:auto;
+    display: inline-block;
+    width:30%;
+    margin-bottom:20px;
+}
+
+.other{
+    width:90%;
+    margin:0 auto;
+    margin-top:60px;
+}
+
+.otheaderr h1{
+    margin-bottom:40px;
+}
+
+.other .bu-a{
+    padding:10px 30px;
+    border:2px solid black;
+    text-decoration: none;
+    color:black;
+    border-radius: 5px;
+}
+
+.other .bu-a2{
+    float:right;
+    padding:10px 30px;
+    border:2px solid #50E3C2;
+    text-decoration: none;
+    color:white;
+    background:#50E3C2;
+    border-radius: 5px;
+}
+
+header{
+    width:100%;
+    padding:30px 0;
+    border-bottom:1px solid #EDEDED;
+}
+
+header .retour-a{
+    position: absolute;
+    top:40px;
+    left:5%;
+    text-decoration: none;
+    color:black;
+    font-weight:600;
+}
+
+.edit-profil{
+    position: absolute;
+    right:5%;
+    top:5px;
+    text-decoration: none;
+    color:black;
+}
+
+.edit-profil img{
+    display: inline-block;
+    width:50px;
+    border-radius: 50%;
+    height:auto;
+    position:relative;
+    top:18px;
+    margin-left:20px;
+}
+
+
+
+header img{
+    display: block;
+    width:140px;
+    height:auto;
+    margin:0 auto;
+}

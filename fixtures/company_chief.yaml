@@ -1,0 +1,41 @@
+App\Entity\CompanyChief:
+    company_chief_1:
+        firstname: 'Michel'
+        lastname: 'Delatour'
+        plainPassword: 'test'
+        email: 'michel.delatour@gmail.com'
+        company: 'vinci'
+        roles:
+            - 'ROLE_ADMIN'
+    company_chief_2:
+        firstname: 'François'
+        lastname: 'Arbre'
+        plainPassword: 'test'
+        email: 'françois.arbre@gmail.com'
+        company: 'aprr'
+        roles: 
+            - 'ROLE_ADMIN'
+    company_chief_3:
+        firstname: 'Charlotte'
+        lastname: 'Cerise'
+        plainPassword: 'test'
+        email: 'charlotte.cerise@gmail.com'
+        company: 'bouygues'
+        roles: 
+            - 'ROLE_ADMIN'
+    company_chief_4:
+        firstname: 'Antoine'
+        lastname: 'Oiseau'
+        plainPassword: 'test'
+        email: 'antoine.oiseau@gmail.com'
+        company: 'effage'
+        roles: 
+            - 'ROLE_ADMIN'
+    company_chief_5:
+        firstname: 'Quentin'
+        lastname: 'Thomas'
+        plainPassword: 'test'
+        email: 'quentin.thomas@gmail.com'
+        company: 'colas'
+        roles: 
+            - 'ROLE_ADMIN'

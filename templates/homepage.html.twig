@@ -1,0 +1,200 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/homepage.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slider/slick.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slider/slick-theme.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <header>
+        <img src="{{ asset('img/logo_blanc.svg') }}" alt="Logo d'illusatration" class="logo">
+        <nav>
+            <ul>
+                <li><a href="{{ path('homepage') }}">Accueil</a></li>
+                <li><a href="#application" class="scrollTo">L'application</a></li>
+                <li><a href="{{ path('on-boarding') }}">À propos</a></li>
+                <li><a href="#contact" class="scrollTo">Contact</a></li>
+                <li><a href="{{ path('login') }}">Se connecter</a></li>
+            </ul>
+        </nav>
+
+        <div id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <a id="back-to-top"></a>
+    <!-- Start first head section -->
+    <section class="first-section">
+        <div class="center">
+            <h1>Participez à la construction<br>des bâtiments de demain</h1>
+            <p>Repensez vos chantiers, optimisez vos déchets et re-valorisez votre entreprise.</p>
+            <a href="{{ path('login') }}" class="a-button">Commencer maintenant</a>
+        </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="ctn-whyus">
+        <h2>Pourquoi nous choisir ?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    </section>
+
+    <!-- Avantage -->
+    <section class="ctn-avantages">
+
+        <div class="img-avantages">
+            <img src="{{ asset('img/mobile.svg') }}" alt="Logo d'illusatration">
+        </div>
+
+        <div class="ctn-side">
+            <div class="side">
+                <img src="{{ asset('img/icons/guarantee.png') }}" alt="Logo d'illusatration">
+                <h3>Label</h3>
+                <p>Donnez une nouvelle image à votre entreprise grâce à notre certification.</p>
+            </div>
+
+            <div class="side">
+                <img src="{{ asset('img/icons/education.png') }}" alt="Logo d'illusatration">
+                <h3>Economie circulaire</h3>
+                <p>Revalorisez l’économie locale et durable.</p>
+            </div>
+
+            <div class="side">
+                <img src="{{ asset('img/icons/fluctuation.png') }}" alt="Logo d'illusatration">
+                <h3>Formation</h3>
+                <p>Formez vos employés et collaborateurs au recyclage des déchets.</p>
+            </div>
+
+            <div class="side">
+                <img src="{{ asset('img/icons/planet-earth.png') }}" alt="Logo d'illusatration">
+                <h3>Environnement</h3>
+                <p>Participez à la préservation de la planète.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Mockup -->
+    <section class="ctn-mockup" id="application">
+        <div class="side-all">
+            <div class="side-text">
+                <h2>L'application Hestia</h2>
+                <p>Hestia vous propose une application pour gérer les déchets présents sur vos chantiers.
+                    <br><br>
+
+                    - Indiquez votre chantier<br>
+                    - Décrivez les matériaux présents<br>
+                    - Choississez une entreprise pour récupérer vos déchets<br>
+                    - Gagnez un labbel écologique
+
+
+                </p>
+                <a href="{{ path('login') }}" class="a-button">Commencer maintenant</a>
+            </div>
+            <div class="side-text">
+                <img src="{{ asset('img/mockup.png') }}" alt="Logo d'illusatration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Classement -->
+    <section class="ctn-whyus">
+        <h2>Le classement des labélisés</h2>
+        <p>Découvrez en temps réel, les meilleurs scores « recyclages » des chantiers utilisants notre application.</p>
+
+    </section>
+
+    <div class="ctn-classement">
+        <ul>
+            {% for site in bestSites %}
+                <li>
+                    <img src="{{ asset('img/avatars/' ~ loop.index ~ '.png') }}" alt="Logo d'illusatration">
+                    <div class="text-classement">
+                        <h4>{{ site.manager.firstname }} {{ site.manager.lastname }}</h4>
+                        <p>Chef de chantier {{ site.manager.company }}</p>
+                        <p>Grâce à Hestia, j'ai pu recylcé mon chantier à {{ site.recyclingRate }}%</p>
+
+                    </div>
+                    <p class="pourcentage-li">{{ site.recyclingRate }}%</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+
+    <!-- Partenaires -->
+    <section class="ctn-whyus">
+        <h2>Ils nous font confiance</h2>
+        <p>Ces entreprises sont labélisées Hestia et utilisent notre application au quotidien.</p>
+    </section>
+
+    <div class="slider-partenaires">
+        <div class="multiple-items">
+            <div>
+                <img src="{{ asset('img/partenaires/vinci.png') }}" alt="Logo d'illusatration">
+            </div>
+
+            <div>
+                <img src="{{ asset('img/partenaires/bouygues.png') }}" alt="Logo d'illusatration">
+            </div>
+
+            <div>
+                <img src="{{ asset('img/partenaires/Lafarge.png') }}" alt="Logo d'illusatration">
+            </div>
+
+            <div>
+                <img src="{{ asset('img/partenaires/eiffage.jpg') }}" alt="Logo d'illusatration">
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Formulaire de contact -->
+    <section class="ctn-contact" id="contact">
+        <h2>Contactez-nous</h2>
+        <div class="flex">
+            <div class="side">
+                <img src="{{ asset('img/contact.svg') }}" alt="Logo d'illusatration">
+            </div>
+
+            <div class="side">
+
+                <form class="" action="index.html" method="post">
+                    <input type="text" name="" value="" placeholder="Nom & Prénom">
+                    <input type="mail" name="" value="" placeholder="Email">
+                    <input type="text" name="" value="" placeholder="Objet">
+                    <textarea name="name" placeholder="Message"></textarea>
+
+                    <div class="form-input">
+                        <input type="checkbox" name="" value="">
+                        <label>En soumettant ce formulaire, j’accepte que les informations saisies soient exploitées dans le cadre de la demande de contact et de la relation commerciale qui peut en découler.</label>
+                    </div>
+
+                    <button type="submit" name="button">Envoyer le message</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="center-footer">
+            <a href="#">Mentions légales</a>
+            <div class="rs-footer">
+                <img src="{{ asset('img/rs/facebook.png') }}" alt="Logo d'illusatration">
+                <img src="{{ asset('img/rs/twitter.png') }}" alt="Logo d'illusatration">
+                <img src="{{ asset('img/rs/linkedin.png') }}" alt="Logo d'illusatration">
+
+            </div>
+            <p class="copy">&copy; Site développé par l'Agence Circular</p>
+        </div>
+    </footer>
+{% endblock %}

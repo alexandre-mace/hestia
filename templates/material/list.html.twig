@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	{% for material in materials %}
+		{{ material.name }}
+		{{ material.isRecycled }}
+		<br>
+	{% endfor %}
+{% endblock %}

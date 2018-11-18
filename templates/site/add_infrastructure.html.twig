@@ -1,0 +1,77 @@
+{% extends 'back-office.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <section class="main choose choose-con">
+
+        <h1>Choisir l'infrastrcuture à démolir :</h1>
+
+        <div class="ctn-choose choose-type">
+
+
+            <div class="side">
+                <p class="title-card">Immeuble</p>
+
+                <ul>
+                    <li>Bois</li>
+                    <li>Acier</li>
+                    <li>Verre</li>
+                    <li>Béton</li>
+                    <li>Parpeint</li>
+                    <li>Pierre</li>
+                    <li>Verre</li>
+                    <li>...</li>
+                </ul>
+
+            </div>
+
+            <div class="side">
+                <p class="title-card">Autoroute</p>
+
+                <ul>
+                    <li>Bois</li>
+                    <li>Acier</li>
+                    <li>Verre</li>
+                    <li>Béton</li>
+                    <li>Parpeint</li>
+                    <li>Pierre</li>
+                    <li>Verre</li>
+                    <li>...</li>
+                </ul>
+
+            </div>
+
+            <div class="side">
+                <p class="title-card">Maison</p>
+
+                <ul>
+                    <li>Bois</li>
+                    <li>Acier</li>
+                    <li>Verre</li>
+                    <li>Béton</li>
+                    <li>Parpeint</li>
+                    <li>Pierre</li>
+                    <li>Verre</li>
+                    <li>...</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <section class="other">
+        <h1>Vous souhaitez créer vous même votre projet ?</h1>
+
+        <a href="#" class="bu-a">Créer</a>
+        <a href="{{ path('site_add_materials', {'slug': site.slug}) }}" class="bu-a2">Étape suivante</a>
+
+    </section>
+{% endblock %}

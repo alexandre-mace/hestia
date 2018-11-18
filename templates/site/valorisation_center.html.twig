@@ -1,0 +1,149 @@
+{% extends 'back-office.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/valorisation-center.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <main>
+
+        <div class="center">
+            <p class="count" data-content="{{ site.recyclingRate }}"></p>
+            <div class="loader">
+                <div class="progress"></div>
+            </div>
+
+            <div class="result-ctn">
+                <p>Bravo ! Vous avez la possibilité de recycler {{ site.recyclingRate }} % de vos déchets.</p>
+                <a class="a-close">Continuer ma démarche</a>
+            </div>
+        </div>
+
+    </main>
+
+    <div style="display: flex; margin-top: 200px;">
+        <div style="margin: auto">
+            <h1>More coming soon.. <a href="{{ path('sitemanager_dashboard') }}">Back-to-dashboard</a></h1>
+        </div>
+    </div>
+{#<section class="main choose">
+
+    <h1>Les matériaux à recycler (60)</h1>
+
+    <div class="flex-re">
+
+        <div class="side">
+            <p class="list">Nom&nbsp;&nbsp;&nbsp;&nbsp;Quantité (en kg)</p>
+            <div class="input-mat">
+                <input type="text" name="" value="" placeholder="Béton">
+                <input type="text" name="" value="" placeholder="Quantité">
+                <span class="delete-mat"><span class="close"></span> </span>
+            </div>
+            <div class="input-mat">
+                <input type="text" name="" value="" placeholder="Béton">
+                <input type="text" name="" value="" placeholder="Quantité">
+                <span class="delete-mat"><span class="close"></span> </span>
+            </div>
+            <div class="input-mat">
+                <input type="text" name="" value="" placeholder="Béton">
+                <input type="text" name="" value="" placeholder="Quantité">
+                <span class="delete-mat"><span class="close"></span> </span>
+            </div>
+            <div class="input-mat">
+                <input type="text" name="" value="" placeholder="Béton">
+                <input type="text" name="" value="" placeholder="Quantité">
+                <span class="delete-mat"><span class="close"></span> </span>
+            </div>
+            <div class="input-mat">
+                <input type="text" name="" value="" placeholder="Béton">
+                <input type="text" name="" value="" placeholder="Quantité">
+                <span class="delete-mat"><span class="close"></span> </span>
+            </div>
+            <div class="input-mat">
+                <input type="text" name="" value="" placeholder="Béton">
+                <input type="text" name="" value="" placeholder="Quantité">
+                <span class="delete-mat"><span class="close"></span> </span>
+            </div>
+            <div class="input-mat">
+                <input type="text" name="" value="" placeholder="Béton">
+                <input type="text" name="" value="" placeholder="Quantité">
+                <span class="delete-mat"><span class="close"></span> </span>
+            </div>
+
+            <div class="input-mat">
+                <input type="text" name="" value="" placeholder="Béton">
+                <input type="text" name="" value="" placeholder="Quantité">
+                <span class="delete-mat"><span class="close"></span> </span>
+            </div>
+            <div class="input-mat">
+                <input type="text" name="" value="" placeholder="Béton">
+                <input type="text" name="" value="" placeholder="Quantité">
+                <span class="delete-mat"><span class="close"></span> </span>
+            </div>
+            <div class="input-mat">
+                <input type="text" name="" value="" placeholder="Béton">
+                <input type="text" name="" value="" placeholder="Quantité">
+                <span class="delete-mat"><span class="close"></span> </span>
+            </div>
+            <div class="input-mat">
+                <input type="text" name="" value="" placeholder="Béton">
+                <input type="text" name="" value="" placeholder="Quantité">
+                <span class="delete-mat"><span class="close"></span> </span>
+            </div>
+
+        </div>
+
+        <div class="side">
+            <h2>Centre de valorisation</h2>
+            <div class="ul-valo">
+
+                <div class="card-valo">
+                    <p class="title-card">Centre Bel air<br><span style="font-weight:400;color:black;">Bordeaux, à 19 kilomètres de chez vous</span></p>
+
+                    <p>Béton, cuivre<br>peuvent être recyclé</p>
+                </div>
+
+                <div class="card-valo">
+                    <p class="title-card">Centre Bel air<br><span style="font-weight:400;color:black;">Bordeaux, à 19 kilomètres de chez vous</span></p>
+
+                    <p>Béton, cuivre<br>peuvent être recyclé</p>
+                </div>
+
+                <div class="card-valo">
+                    <p class="title-card">Centre Bel air<br><span style="font-weight:400;color:black;">Bordeaux, à 19 kilomètres de chez vous</span></p>
+
+                    <p>Béton, cuivre<br>peuvent être recyclé</p>
+                </div>
+
+                <div class="card-valo">
+                    <p class="title-card">Centre Bel air<br><span style="font-weight:400;color:black;">Bordeaux, à 19 kilomètres de chez vous</span></p>
+
+                    <p>Béton, cuivre<br>peuvent être recyclé</p>
+                </div>
+
+                <div class="card-valo">
+                    <p class="title-card">Centre Bel air<br><span style="font-weight:400;color:black;">Bordeaux, à 19 kilomètres de chez vous</span></p>
+
+                    <p>Béton, cuivre<br>peuvent être recyclé</p>
+                </div>
+
+                <div class="card-valo">
+                    <p class="title-card">Centre Bel air<br><span style="font-weight:400;color:black;">Bordeaux, à 19 kilomètres de chez vous</span></p>
+
+                    <p>Béton, cuivre<br>peuvent être recyclé</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>#}
+
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('js/loader.js') }}"></script>
+{% endblock %}
