@@ -32,14 +32,14 @@ class Material
     private $isRecycled;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\SiteMaterialListExample", mappedBy="materials")
+     * @ORM\ManyToMany(targetEntity="App\Entity\SiteMaterialsExample", mappedBy="materials")
      */
-    private $siteMaterialListExamples;
+    private $siteMaterialsExample;
 
     public function __construct()
     {
         $this->sites = new ArrayCollection();
-        $this->siteMaterialListExamples = new ArrayCollection();
+        $this->siteMaterialsExample = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -72,28 +72,28 @@ class Material
     }
 
     /**
-     * @return Collection|SiteMaterialListExample[]
+     * @return Collection|SiteMaterialsExample[]
      */
-    public function getSiteMaterialListExamples(): Collection
+    public function getSiteMaterialsExample(): Collection
     {
-        return $this->siteMaterialListExamples;
+        return $this->siteMaterialsExample;
     }
 
-    public function addSiteMaterialListExample(SiteMaterialListExample $siteMaterialListExample): self
+    public function addSiteMaterialsExample(SiteMaterialsExample $siteMaterialsExample): self
     {
-        if (!$this->siteMaterialListExamples->contains($siteMaterialListExample)) {
-            $this->siteMaterialListExamples[] = $siteMaterialListExample;
-            $siteMaterialListExample->addMaterial($this);
+        if (!$this->siteMaterialsExample->contains($siteMaterialsExample)) {
+            $this->siteMaterialsExample[] = $siteMaterialsExample;
+            $siteMaterialsExample->addMaterial($this);
         }
 
         return $this;
     }
 
-    public function removeSiteMaterialListExample(SiteMaterialListExample $siteMaterialListExample): self
+    public function removeSiteMaterialsExample(SiteMaterialsExample $siteMaterialsExample): self
     {
-        if ($this->siteMaterialListExamples->contains($siteMaterialListExample)) {
-            $this->siteMaterialListExamples->removeElement($siteMaterialListExample);
-            $siteMaterialListExample->removeMaterial($this);
+        if ($this->siteMaterialsExample->contains($siteMaterialsExample)) {
+            $this->siteMaterialsExample->removeElement($siteMaterialsExample);
+            $siteMaterialsExample->removeMaterial($this);
         }
 
         return $this;
