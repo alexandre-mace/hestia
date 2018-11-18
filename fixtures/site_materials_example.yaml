@@ -1,27 +1,27 @@
-App\Entity\SiteMaterialListExample:
-    site_material_list_example_1:
+App\Entity\SiteMaterialsExample:
+    site_materials_example_1:
         name: 'Route'
         materials: 
             - '@material_1'
             - '@material_2'
             - '@material_3'
-    site_material_list_example_2:
+    site_materials_example_2:
         name: 'Maison'
         materials: 
             - '@material_4'
             - '@material_5'
-    site_material_list_example_3:
+    site_materials_example_3:
         name: 'Bâtiment'
         materials: 
             - '@material_2'
             - '@material_3'
-    site_material_list_example_4:
+    site_materials_example_4:
         name: 'Entrepôt'
         materials: 
             - '@material_1'
             - '@material_4'
             - '@material_5'
-    site_material_list_example_5:
+    site_materials_example_5:
         name: 'Rénovation'
         materials: 
             - '@material_1'

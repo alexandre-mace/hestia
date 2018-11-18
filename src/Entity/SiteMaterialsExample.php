@@ -7,9 +7,9 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\SiteMaterialListExampleRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\SiteMaterialsExampleRepository")
  */
-class SiteMaterialListExample
+class SiteMaterialsExample
 {
     /**
      * @ORM\Id()
@@ -19,7 +19,7 @@ class SiteMaterialListExample
     private $id;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Material", inversedBy="siteMaterialListExamples")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Material", inversedBy="siteMaterialsExample")
      */
     private $materials;
 
