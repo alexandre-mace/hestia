@@ -2,11 +2,11 @@
 
         var counter = 0;
         var c = 0;
-        var endPoint = $('.count').data('content');
+        var endPoint = $(".count").data("content");
         var t = setInterval(function() {
 
 
-            $(".count").html(c + '%');
+            $(".count").html(c + "%");
             $(".progress").css("width", c + "%");
 
             counter++;
@@ -17,14 +17,14 @@
 
                 // Actions
                 setTimeout(function(){
-                    $('.count, .loader').fadeOut();
+                    $(".count, .loader").fadeOut();
                 }, 500);
 
                 setTimeout(function(){
-                    $('.result-ctn').fadeIn();
+                    $(".result-ctn").fadeIn();
                 }, 1250);
-                $('.a-close').click( function () {
-                    $('main').fadeOut();
+                $(".a-close").click( function () {
+                    $("main").fadeOut();
                 })
 
             }
