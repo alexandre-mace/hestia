@@ -65,6 +65,8 @@
         },
         "post-install-cmd": [
             "@auto-scripts"
+            "php bin/console doctrine:database:create"
+            "php bin/console doctrine:schema:update"
         ],
         "post-update-cmd": [
             "@auto-scripts"
