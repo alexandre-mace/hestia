@@ -1,5 +1,7 @@
 # Hestia
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/70c4e6480c4c4393998b976a48d20a64)](https://app.codacy.com/app/codacy_alexandre-mace/hestia?utm_source=github.com&utm_medium=referral&utm_content=alexandre-mace/hestia&utm_campaign=Badge_Grade_Dashboard)
+
 Hackaton project involved in circular economic made with Symfony 4 flex (48 hours)
 
 ## Requirements 
