@@ -87,7 +87,7 @@ class SiteController extends Controller
     /**
      * @Route("/site/{slug}/valorisation_center", name="site_valorisation_center")
      */
-    public function valorisationCenter(EntityManagerInterface $manager, Request $request, SiteUpdateHandler $handler, Site $site)
+    public function valorisationCenter(Site $site)
     {
         return $this->render('site/valorisation_center.html.twig', ['site' => $site]);
     }

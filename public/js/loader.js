@@ -11,8 +11,7 @@
 
             counter++;
             c++;
-            console.log(endPoint);
-            if(counter == parseFloat(endPoint) + parseFloat(1)) {
+            if(counter === parseFloat(endPoint) + parseFloat(1)) {
                 clearInterval(t);
 
                 // Actions
@@ -27,7 +26,7 @@
                     $("main").fadeOut();
                 })
 
-            }
+            };
         }, 50);
 
     });
