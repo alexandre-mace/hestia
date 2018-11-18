@@ -8,24 +8,24 @@ class RecyclingRateCalculator
 {
 	public function calculate(Site $site)
 	{
-		$recycledMaterialQuantities = [];
-		$totalMaterialQuantities = [];
+		$recycledQuantities = [];
+		$totalQuantities = [];
 
 		$siteMaterials = $site->getSiteMaterials();
 
 		foreach ($siteMaterials as $siteMaterial) {
 			switch ($siteMaterial->getMaterial()->getIsRecycled()) {
 				case true:
-					$recycledMaterialQuantities[] = $siteMaterial->getQuantity();
-					$totalMaterialQuantities[] = $siteMaterial->getQuantity();
+					$recycledQuantities[] = $siteMaterial->getQuantity();
+					$totalQuantities[] = $siteMaterial->getQuantity();
 					break;
 				case false:
-					$totalMaterialQuantities[] = $siteMaterial->getQuantity();
+					$totalQuantities[] = $siteMaterial->getQuantity();
 					break;
 			}
 		}
-        return array_sum($totalMaterialQuantities) > 0 ?
-		((array_sum($recycledMaterialQuantities) / array_sum($totalMaterialQuantities)) * 100 ) :
+        return array_sum($totalQuantities) > 0 ?
+		((array_sum($recycledQuantities) / array_sum($totalQuantities)) * 100 ) :
 		0;
 	}
 }
