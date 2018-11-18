@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78971bdd-d70d-4199-823c-3c3471d97e1f" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fixtures/site_material_list_example.yaml" afterPath="$PROJECT_DIR$/fixtures/site_materials_example.yaml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Entity/SiteMaterialListExample.php" afterPath="$PROJECT_DIR$/src/Entity/SiteMaterialsExample.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Repository/SiteMaterialListExampleRepository.php" afterPath="$PROJECT_DIR$/src/Repository/SiteMaterialsExampleRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/add_general_information.css" afterPath="$PROJECT_DIR$/public/css/add_general_information.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/add_materials.js" afterPath="$PROJECT_DIR$/public/js/add_materials.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,53 +15,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RecyclingRateCalculator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Service/RecyclingRateCalculator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="59" lean-forward="false" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FrontController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/FrontController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-              <folding>
-                <element signature="e#34#66#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="choose_type.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/choose_type.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loader.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/loader.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
               <caret line="68" column="38" lean-forward="false" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_materials.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/add_materials.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_general_information.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/site/add_general_information.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_general_information.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/css/add_general_information.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="74" column="31" lean-forward="false" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -113,7 +110,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site_materials_example.yaml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="site_materials_example.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixtures/site_materials_example.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -152,7 +149,6 @@
       <find>estimated</find>
       <find>format</find>
       <find>delee</find>
-      <find>input</find>
       <find>siteMa</find>
       <find>last</find>
       <find>title-c</find>
@@ -165,6 +161,7 @@
       <find>Ma</find>
       <find>material_list</find>
       <find>List</find>
+      <find>input</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/css/login.css" />
         <option value="$PROJECT_DIR$/src/Controller/SiteManagerController.php" />
         <option value="$PROJECT_DIR$/src/Form/SiteManagerType.php" />
         <option value="$PROJECT_DIR$/templates/site_choose_type.html.twig" />
@@ -192,7 +188,6 @@
         <option value="$PROJECT_DIR$/templates/material/material.html.twig" />
         <option value="$PROJECT_DIR$/public/css/add_materials.css" />
         <option value="$PROJECT_DIR$/public/css/dashboard.css" />
-        <option value="$PROJECT_DIR$/templates/site/add_general_information.html.twig" />
         <option value="$PROJECT_DIR$/templates/site/add_materials.html.twig" />
         <option value="$PROJECT_DIR$/templates/registration/register.html.twig" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
@@ -213,7 +208,6 @@
         <option value="$PROJECT_DIR$/src/Handler/MaterialAddHandler.php" />
         <option value="$PROJECT_DIR$/src/Handler/RegisterHandler.php" />
         <option value="$PROJECT_DIR$/src/Handler/SiteDeleteHandler.php" />
-        <option value="$PROJECT_DIR$/public/js/add_materials.js" />
         <option value="$PROJECT_DIR$/public/js/base.js" />
         <option value="$PROJECT_DIR$/src/Entity/Material.php" />
         <option value="$PROJECT_DIR$/src/Service/RecyclingRateCalculator.php" />
@@ -224,6 +218,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Entity/SiteMaterialsExample.php" />
         <option value="$PROJECT_DIR$/fixtures/site_materials_example.yaml" />
+        <option value="$PROJECT_DIR$/public/js/add_materials.js" />
+        <option value="$PROJECT_DIR$/templates/site/add_general_information.html.twig" />
+        <option value="$PROJECT_DIR$/public/css/add_general_information.css" />
       </list>
     </option>
   </component>
@@ -235,9 +232,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="991" />
+    <option name="x" value="63" />
     <option name="y" value="25" />
-    <option name="width" value="929" />
+    <option name="width" value="1857" />
     <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -274,6 +271,12 @@
               <item name="hackaton" type="b2602c69:ProjectViewProjectNode" />
               <item name="hackaton" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hackaton" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hackaton" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="hackaton" type="b2602c69:ProjectViewProjectNode" />
@@ -382,7 +385,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../oc_p8" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="SearchEverywhereHistoryKey" value="Site&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Controller/SiteController.php&#10;da&#9;FILE&#9;file:///home/alex/Bureau/hackaton/templates/sitemanager/dashboard.html.twig&#10;User&#9;null&#9;null&#10;dash&#9;FILE&#9;file:///home/alex/Bureau/hackaton/templates/sitemanager/dashboard.html.twig&#10;front&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Controller/FrontController.php&#10;SiteC&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Controller/SiteController.php&#10;Sitec&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Controller/SiteController.php&#10;recyc&#9;null&#9;null&#10;logi&#9;FILE&#9;file:///home/alex/Bureau/hackaton/public/css/login.css&#10;fro&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Controller/FrontController.php&#10;loader&#9;FILE&#9;file:///home/alex/Bureau/hackaton/public/js/loader.js&#10;label&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Service/LabelAwarder.php&#10;ca&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Service/RecyclingRateCalculator.php&#10;re&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Service/RecyclingRateCalculator.php&#10;recy&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Service/RecyclingRateCalculator.php&#10;SUb&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/EventListener/SiteSubscriber.php&#10;Si&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Entity/Site.php&#10;rec&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Service/RecyclingRateCalculator.php&#10;subsc&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/EventListener/SiteSubscriber.php&#10;rEC&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Service/RecyclingRateCalculator.php&#10;Rec&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Service/RecyclingRateCalculator.php&#10;UPda&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Handler/SiteUpdateHandler.php&#10;Mate&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Handler/MaterialAddHandler.php&#10;Recy&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Service/RecyclingRateCalculator.php&#10;valor&#9;FILE&#9;file:///home/alex/Bureau/hackaton/templates/centre-valorisation.html.twig&#10;s&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Controller/SiteController.php&#10;Sub&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/EventListener/SiteSubscriber.php&#10;Recyc&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Service/RecyclingRateCalculator.php&#10;SiteA&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Handler/SiteAddHandler.php&#10;dashb&#9;FILE&#9;file:///home/alex/Bureau/hackaton/templates/sitemanager/dashboard.html.twig&#10;SiteMate&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Form/SiteMaterialType.php&#10;SiteMa&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Form/SiteMaterialsType.php&#10;SiteCon&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Controller/SiteController.php&#10;home&#9;FILE&#9;file:///home/alex/Bureau/hackaton/templates/homepage.html.twig&#10;general&#9;FILE&#9;file:///home/alex/Bureau/hackaton/templates/site/add_general_information.html.twig&#10;SiteRe&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Repository/SiteRepository.php&#10;base.html&#9;FILE&#9;file:///home/alex/Bureau/hackaton/templates/base.html.twig&#10;SiteM&#9;FILE&#9;file:///home/alex/Bureau/hackaton/src/Entity/SiteManager.php" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -431,12 +434,12 @@
       <workItem from="1542411621149" duration="646000" />
       <workItem from="1542461601461" duration="34421000" />
       <workItem from="1542548205720" duration="1259000" />
-      <workItem from="1542551403278" duration="3123000" />
+      <workItem from="1542551403278" duration="6244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76581000" />
+    <option name="totallyTimeSpent" value="79702000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="25" width="1857" height="1055" extended-state="6" />
@@ -501,24 +504,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/add_general_information.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/add_materials.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="31" column="1" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="487" column="0" lean-forward="false" selection-start-line="487" selection-start-column="0" selection-end-line="487" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -718,14 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/site/add_general_information.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/site/add_infrastructure.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -746,14 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/add_materials.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -842,16 +815,8 @@
         <state relative-caret-position="558">
           <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding>
-            <element signature="e#34#66#0#PHP" expanded="true" />
+            <element signature="e#34#66#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="68" column="38" lean-forward="false" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,6 +869,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="68" column="38" lean-forward="false" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/add_materials.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/site/add_general_information.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/add_general_information.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="74" column="31" lean-forward="false" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
           <folding />
         </state>
       </provider>
