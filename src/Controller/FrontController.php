@@ -29,7 +29,7 @@ class FrontController extends Controller
     /**
      * @Route("/on-boarding", name="on-boarding")
      */
-    public function onBoarding(EntityManagerInterface $manager, OnBoardingHandler $handler)
+    public function onBoarding(OnBoardingHandler $handler)
     {
         $handler->handle();
         return $this->render('on-boarding.html.twig');

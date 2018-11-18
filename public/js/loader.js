@@ -24,9 +24,9 @@
                 }, 1250);
                 $(".a-close").click( function () {
                     $("main").fadeOut();
-                })
+                });
 
-            };
+            }
         }, 50);
 
     });

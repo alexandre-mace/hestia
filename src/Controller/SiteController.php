@@ -66,7 +66,7 @@ class SiteController extends Controller
     /**
      * @Route("/site/{slug}/add-infrastructure", name="site_add_infrastructure")
      */
-    public function addInfrastructure(SiteUpdateHandler $handler, Site $site)
+    public function addInfrastructure(Site $site)
     {
         return $this->render('site/add_infrastructure.html.twig', ['site' => $site]);
     }
