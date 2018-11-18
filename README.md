@@ -1,6 +1,6 @@
 # Hestia
 
-Hackaton project involved in circular economic made with Symfony 4 flex (48 hours)
+Hackaton project involved in circular economy made with Symfony 4 flex (48 hours)
 
 ## Requirements 
 *   [MySQL](https://www.mysql.com/fr/)
