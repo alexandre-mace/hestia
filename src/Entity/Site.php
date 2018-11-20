@@ -75,7 +75,7 @@ class Site
     /**
      * @ORM\Column(type="datetime")
      */
-    private $startDate;
+    private $createdAt;
 
     /**
      * @ORM\Column(type="datetime")
@@ -85,7 +85,7 @@ class Site
     public function __construct()
     {
         $this->siteMaterials = new ArrayCollection();
-        $this->startDate = new \DateTime();
+        $this->createdAt = new \DateTime();
         $this->updatedAt = new \DateTime();
     }
 
@@ -233,14 +233,14 @@ class Site
         return $this;
     }
 
-    public function getStartDate(): ?\DateTimeInterface
+    public function getCreatedAt(): ?\DateTimeInterface
     {
-        return $this->startDate;
+        return $this->createdAt;
     }
 
-    public function setStartDate(\DateTimeInterface $startDate): self
+    public function setCreatedAt(\DateTimeInterface $createdAt): self
     {
-        $this->startDate = $startDate;
+        $this->createdAt = $createdAt;
 
         return $this;
     }
