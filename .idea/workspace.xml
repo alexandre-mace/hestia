@@ -2,86 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78971bdd-d70d-4199-823c-3c3471d97e1f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.env.test" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/hackaton.iml" afterPath="$PROJECT_DIR$/.idea/hackaton.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/phpunit" afterPath="$PROJECT_DIR$/bin/phpunit" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Controller/FrontController.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Controller/FrontController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Controller/MaterialController.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Controller/MaterialController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Controller/SecurityController.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Controller/SecurityController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Controller/SiteController.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Controller/SiteController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Controller/SiteManagerController.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Controller/SiteManagerController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Controller/dashboard.html" afterPath="$PROJECT_DIR$/build/coverage-html/Controller/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Controller/index.html" afterPath="$PROJECT_DIR$/build/coverage-html/Controller/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Entity/CompanyChief.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Entity/CompanyChief.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Entity/Label.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Entity/Label.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Entity/Material.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Entity/Material.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Entity/Site.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Entity/Site.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Entity/SiteManager.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Entity/SiteManager.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Entity/SiteMaterial.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Entity/SiteMaterial.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Entity/SiteMaterialsExample.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Entity/SiteMaterialsExample.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Entity/User.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Entity/User.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Entity/dashboard.html" afterPath="$PROJECT_DIR$/build/coverage-html/Entity/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Entity/index.html" afterPath="$PROJECT_DIR$/build/coverage-html/Entity/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/EventListener/MaterialSubscriber.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/EventListener/MaterialSubscriber.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/EventListener/SiteSubscriber.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/EventListener/SiteSubscriber.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/EventListener/UserSubscriber.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/EventListener/UserSubscriber.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/EventListener/dashboard.html" afterPath="$PROJECT_DIR$/build/coverage-html/EventListener/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/EventListener/index.html" afterPath="$PROJECT_DIR$/build/coverage-html/EventListener/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Form/MaterialType.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Form/MaterialType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Form/SiteGeneralInformationType.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Form/SiteGeneralInformationType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Form/SiteInfrastructureType.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Form/SiteInfrastructureType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Form/SiteManagerType.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Form/SiteManagerType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Form/SiteMaterialType.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Form/SiteMaterialType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Form/SiteMaterialsType.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Form/SiteMaterialsType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Form/SiteType.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Form/SiteType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Form/SiteTypeType.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Form/SiteTypeType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Form/dashboard.html" afterPath="$PROJECT_DIR$/build/coverage-html/Form/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Form/index.html" afterPath="$PROJECT_DIR$/build/coverage-html/Form/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Handler/HomePageHandler.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Handler/HomePageHandler.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Handler/MaterialAddHandler.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Handler/MaterialAddHandler.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Handler/MaterialUpdateHandler.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Handler/MaterialUpdateHandler.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Handler/OnBoardingHandler.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Handler/OnBoardingHandler.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Handler/RegisterHandler.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Handler/RegisterHandler.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Handler/SiteAddHandler.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Handler/SiteAddHandler.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Handler/SiteChooseTypeHandler.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Handler/SiteChooseTypeHandler.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Handler/SiteDeleteHandler.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Handler/SiteDeleteHandler.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Handler/SiteUpdateHandler.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Handler/SiteUpdateHandler.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Handler/dashboard.html" afterPath="$PROJECT_DIR$/build/coverage-html/Handler/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Handler/index.html" afterPath="$PROJECT_DIR$/build/coverage-html/Handler/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Repository/CompanyChiefRepository.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Repository/CompanyChiefRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Repository/LabelRepository.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Repository/LabelRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Repository/MaterialRepository.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Repository/MaterialRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Repository/SiteManagerRepository.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Repository/SiteManagerRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Repository/SiteMaterialRepository.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Repository/SiteMaterialRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Repository/SiteMaterialsExampleRepository.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Repository/SiteMaterialsExampleRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Repository/SiteRepository.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Repository/SiteRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Repository/UserRepository.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Repository/UserRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Repository/dashboard.html" afterPath="$PROJECT_DIR$/build/coverage-html/Repository/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Repository/index.html" afterPath="$PROJECT_DIR$/build/coverage-html/Repository/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Security/LoginFormAuthenticator.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Security/LoginFormAuthenticator.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Security/dashboard.html" afterPath="$PROJECT_DIR$/build/coverage-html/Security/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Security/index.html" afterPath="$PROJECT_DIR$/build/coverage-html/Security/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Service/LabelAwarder.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Service/LabelAwarder.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Service/RecyclingRateCalculator.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Service/RecyclingRateCalculator.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Service/Slugger.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Service/Slugger.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Service/dashboard.html" afterPath="$PROJECT_DIR$/build/coverage-html/Service/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Service/index.html" afterPath="$PROJECT_DIR$/build/coverage-html/Service/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Traits/Sluggable.php.html" afterPath="$PROJECT_DIR$/build/coverage-html/Traits/Sluggable.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Traits/dashboard.html" afterPath="$PROJECT_DIR$/build/coverage-html/Traits/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/Traits/index.html" afterPath="$PROJECT_DIR$/build/coverage-html/Traits/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/dashboard.html" afterPath="$PROJECT_DIR$/build/coverage-html/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/coverage-html/index.html" afterPath="$PROJECT_DIR$/build/coverage-html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/packages/test/framework.yaml" afterPath="$PROJECT_DIR$/config/packages/test/framework.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/add_materials.css" afterPath="$PROJECT_DIR$/public/css/add_materials.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/dashboard.css" afterPath="$PROJECT_DIR$/public/css/dashboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Form/SiteMaterialType.php" afterPath="$PROJECT_DIR$/src/Form/SiteMaterialType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Form/SiteMaterialsType.php" afterPath="$PROJECT_DIR$/src/Form/SiteMaterialsType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/site/add_materials.html.twig" afterPath="$PROJECT_DIR$/templates/site/add_materials.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/SecurityControllerTest.php" afterPath="$PROJECT_DIR$/tests/Controller/SecurityControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/SiteControllerTest.php" afterPath="$PROJECT_DIR$/tests/Controller/SiteControllerTest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -92,31 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="monolog.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/packages/dev/monolog.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="framework.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/packages/test/framework.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
               <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hautelook_alice.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/packages/dev/hautelook_alice.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -142,11 +43,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env.local" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".env.local" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env.local">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/material/add.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="material.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/material/material.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_materials.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/site/add_materials.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="71" lean-forward="true" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -167,16 +98,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
               <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="easy_log_handler.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/packages/dev/easy_log_handler.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -288,7 +209,6 @@
         <option value="$PROJECT_DIR$/public/css/add_materials.css" />
         <option value="$PROJECT_DIR$/src/Form/SiteMaterialType.php" />
         <option value="$PROJECT_DIR$/public/css/dashboard.css" />
-        <option value="$PROJECT_DIR$/templates/site/add_materials.html.twig" />
         <option value="$PROJECT_DIR$/src/Form/SiteMaterialsType.php" />
         <option value="$PROJECT_DIR$/phpinfo.php" />
         <option value="$PROJECT_DIR$/tests/Controller/SiteControllerTest.php" />
@@ -296,6 +216,7 @@
         <option value="$PROJECT_DIR$/config/packages/test/framework.yaml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/templates/site/add_materials.html.twig" />
       </list>
     </option>
   </component>
@@ -334,6 +255,28 @@
             <path>
               <item name="hestia" type="b2602c69:ProjectViewProjectNode" />
               <item name="hestia" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hestia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hestia" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hestia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hestia" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hestia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hestia" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="material" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hestia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hestia" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="site" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -405,12 +348,12 @@
       <workItem from="1542917646679" duration="6796000" />
       <workItem from="1542994155413" duration="14244000" />
       <workItem from="1543115031988" duration="3209000" />
-      <workItem from="1543695279567" duration="463000" />
+      <workItem from="1543695279567" duration="779000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133599000" />
+    <option name="totallyTimeSpent" value="133915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="25" width="1869" height="1055" extended-state="6" />
@@ -530,6 +473,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-234">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -582,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/material/add.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/material/list.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -603,24 +540,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/material/material.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/SiteMaterialsType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/site/add_materials.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -801,6 +724,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/material/add.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/material/material.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/site/add_materials.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="71" lean-forward="true" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
           <folding />
         </state>
       </provider>
