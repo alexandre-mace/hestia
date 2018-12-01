@@ -487,7 +487,6 @@ a{
 }
 
 .input-mat{
-	margin-top:20px;
 }
 
 .input-mat input{
@@ -508,7 +507,6 @@ a{
 	background:#50E3C2;
 	display:inline-block;
 	position:relative;
-	top:14px;
 	cursor:pointer;
 }
 

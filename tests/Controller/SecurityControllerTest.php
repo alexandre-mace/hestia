@@ -28,7 +28,6 @@ class SecurityControllerTest extends WebTestCase
             $form['site_manager[plainPassword][first]'] = 'test';
             $form['site_manager[plainPassword][second]'] = 'test';
             $client->submit($form);
-
             $this->assertTrue($client->getResponse()->isRedirection());
         }
         $crawler = $client->request('GET', '/login');

@@ -1,8 +1,15 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: alex
+ * Date: 22/11/18
+ * Time: 22:52
+ */
 
 namespace App\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+
 
 class SiteControllerTest extends WebTestCase
 {
@@ -22,159 +29,43 @@ class SiteControllerTest extends WebTestCase
             'PHP_AUTH_USER' => 'test@test.com',
             'PHP_AUTH_PW' => 'test'
         ));
-        $crawler = $client->request('GET', '/site/choose');
+        $crawler = $client->request('GET', '/site/choose-type');
         $this->assertTrue($client->getResponse()->isSuccessful());
 
         if ($client->getResponse()->isSuccessful()) {
-            $form = $crawler->selectButton('Ajouter')->form();
-            $form['task[title]'] = 'test task add';
-            $form['task[content]'] = 'test task add test task add test task add test task add test task add';
+            $form = $crawler->filter('form')->form();
+            $form['site_type[choice]'] = 'construction';
             $client->submit($form);
 
             $this->assertTrue($client->getResponse()->isRedirection());
 
             $crawler = $client->followRedirect();
-            $this->assertContains(
-                'La tâche a été bien été ajoutée.',
-                $client->getResponse()->getContent()
-            );
-            $this->assertContains(
-                'test task add',
-                $client->getResponse()->getContent()
-            );
         }
-    }
-
-    public function testEdit()
-    {
-        $client = self::createClient(array(), array(
-            'PHP_AUTH_USER' => 'a',
-            'PHP_AUTH_PW'   => 'a'
-        ));
-        $crawler = $client->request('GET', '/tasks/test-task-add/edit');
-        $this->assertTrue($client->getResponse()->isSuccessful());
-
-        if ($client->getResponse()->isSuccessful()) {
-            $form = $crawler->selectButton('Modifier')->form();
-            $form['task[title]'] = 'test task update';
-            $form['task[content]'] = 'test task update test task update test task update';
-
-            $client->submit($form);
-            $this->assertTrue($client->getResponse()->isRedirection());
-            $crawler = $client->followRedirect();
-
-            $this->assertContains(
-                'La tâche a bien été modifiée.',
-                $client->getResponse()->getContent()
-            );
-            $this->assertContains(
-                'test task update',
-                $client->getResponse()->getContent()
-            );
-        }
-    }
-
-    public function testToggleTask()
-    {
-        $client = self::createClient(array(), array(
-            'PHP_AUTH_USER' => 'a',
-            'PHP_AUTH_PW'   => 'a'
-        ));
-        $crawler = $client->request('GET', '/tasks');
-        $form = $crawler->selectButton('Marquer comme faite')->last()->form();
+        $siteName = 'test' .rand();
+        $form = $crawler->selectButton('Enregistrer')->form();
+        $form['site_general_information[name]'] = $siteName;
+        $form['site_general_information[street]'] = 'test';
+        $form['site_general_information[postalCode]'] = 00000;
+        $form['site_general_information[city]'] = 'test';
+        $form['site_general_information[estimatedFinishDate]'] = '2020-01-01';
         $client->submit($form);
         $this->assertTrue($client->getResponse()->isRedirection());
-        $crawler = $client->followRedirect();
-        $this->assertContains(
-            'La tâche test task update a bien été marquée comme faite.',
-            $client->getResponse()->getContent()
-        );
-    }
 
-    public function testDelete()
-    {
-        $client = static::createClient(array(), array(
-            'PHP_AUTH_USER' => 'a',
-            'PHP_AUTH_PW'   => 'a'
-        ));
-        $crawler = $client->request('GET', '/tasks');
-        $form = $crawler->selectButton('Supprimer')->last()->form();
-        $client->submit($form);
+        $materialsData = [
+            'site_materials' => [
+                0 => [
+                    'material' => 'Fer',
+                    'quantity' => 1
+                ],
+                1 => [
+                    'material' => 'Bois',
+                    'quantity' => 1
+            ]
+                ]
+        ];
+
+        $client->request('POST', '/site/' .$siteName. '/add-materials', $materialsData);
+        echo $client->getResponse()->getContent();die;
         $this->assertTrue($client->getResponse()->isRedirection());
-        $crawler = $client->followRedirect();
-        $this->assertContains('La tâche a bien été supprimée.', $client->getResponse()->getContent());
-    }
-    public function testAnonDelete()
-    {
-        $client = self::createClient(array(), array(
-            'PHP_AUTH_USER' => 'anon',
-            'PHP_AUTH_PW' => 'anon'
-        ));
-        $crawler = $client->request('GET', '/tasks/create');
-        $this->assertTrue($client->getResponse()->isSuccessful());
-
-        if ($client->getResponse()->isSuccessful()) {
-            $form = $crawler->selectButton('Ajouter')->form();
-            $form['task[title]'] = 'test task voter';
-            $form['task[content]'] = 'test task voter';
-            $client->submit($form);
-
-            $this->assertTrue($client->getResponse()->isRedirection());
-
-            $crawler = $client->followRedirect();
-            $this->assertContains(
-                'La tâche a été bien été ajoutée.',
-                $client->getResponse()->getContent()
-            );
-            $this->assertContains(
-                'test task voter',
-                $client->getResponse()->getContent()
-            );
-        }
-
-        $client->request('GET', 'tasks/test-task-voter/delete');
-        $this->assertTrue($client->getResponse()->isRedirection());
-
-        $crawler = $client->followRedirect();
-        $this->assertEquals(
-            1,
-            $crawler->filter('html:contains("La tâche a bien été supprimée.")')->count());
-    }
-    public function testDeleteException()
-    {
-        $client = self::createClient(array(), array(
-            'PHP_AUTH_USER' => 'a',
-            'PHP_AUTH_PW' => 'a'
-        ));
-        $crawler = $client->request('GET', '/tasks/create');
-        $this->assertTrue($client->getResponse()->isSuccessful());
-
-        if ($client->getResponse()->isSuccessful()) {
-            $form = $crawler->selectButton('Ajouter')->form();
-            $form['task[title]'] = 'test exception delete';
-            $form['task[content]'] = 'test exception delete';
-            $client->submit($form);
-
-            $this->assertTrue($client->getResponse()->isRedirection());
-
-            $crawler = $client->followRedirect();
-            $this->assertContains(
-                'La tâche a été bien été ajoutée.',
-                $client->getResponse()->getContent()
-            );
-            $this->assertContains(
-                'test exception delete',
-                $client->getResponse()->getContent()
-            );
-        }
-
-        $client = static::createClient(array(), array(
-            'PHP_AUTH_USER' => 'b',
-            'PHP_AUTH_PW'   => 'b'
-        ));
-        $crawler = $client->request('GET', '/tasks');
-        $form = $crawler->selectButton('Supprimer')->last()->form();
-        $client->submit($form);
-        $this->assertEquals(403, $client->getResponse()->getStatusCode());
     }
 }

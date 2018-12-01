@@ -20,9 +20,6 @@ class SiteMaterialsType extends AbstractType
                 "allow_delete"  => true,
                 "by_reference"  => false
             ])
-            ->add('save', SubmitType::class, array(
-                'attr' => array('class' => 'save'),
-            ))
         ;
     }
 
